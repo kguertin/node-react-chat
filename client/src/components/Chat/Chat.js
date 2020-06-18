@@ -48,11 +48,12 @@ console.log(message, messages);
 return (
   <div className="outerContainer">
       <div className="container">
-          <input 
+        <InfoBar room={room}/>
+          {/* <input 
           value={message}
           onChange={e => setMessage(e.target.value)}
           onKeyPress={e => e.key === 'Enter' ? sendMessage(e) : null} 
-          />
+          /> */}
       </div>
   </div> 
 )
